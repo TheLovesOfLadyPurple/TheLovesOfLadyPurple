@@ -1,115 +1,55 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title     = {Relativity: the Special and General Theory},
-  author    = {Einstein, Albert},
-  year      = {1920},
-  publisher = {Methuen & Co Ltd},
-  html      = {relativity.html}
+@inproceedings{li2026rain,
+  abbr            = {BMVC-W},
+  bibtex_show     = {true},
+  title           = {RAIN: Region-Aware Inversion Network for Semantic Watermark Extraction},
+  author          = {Li, Zilai},
+  booktitle       = {Proceedings of the 37th British Machine Vision Conference (BMVC) Workshop on Trustworthy Visual Computing (TrustVis)},
+  year            = {2026},
+  month           = {November},
+  abstract        = {Semantic watermarks for diffusion models embed ownership information into the generative process while preserving perceptual quality, but Gaussian-Shading extraction conventionally requires multi-step diffusion inversion to recover the initial noise. Recent one-step methods show that this cost can be reduced substantially. We study this problem through extended flow matching and conditional regression. The key observation is that, near the high-SNR image endpoint, recovering a useful noise statistic given by the first-step output of the extended flow matching in the high-SNR regime is much simpler than reconstructing the full inverse trajectory, and Gaussian Shading only requires the recovered latent to remain in the correct watermark decision region. Based on this observation, we propose a lightweight, prompt-free extractor that decomposes endpoint recovery into an image-like anchor and a noise-oriented residual, which increases the capability of the model to utilize GPU parallel computation. The resulting method avoids iterative inversion and repeated evaluation of a diffusion-scale U-Net, providing an efficient one-step extraction pipeline (14.394 GFLOPs, 47.4x fewer FLOPs and 22.5x--26.8x lower latency than OSI and FARI) with a concise theoretical interpretation.},
+  arxiv           = {2609.14856},
+  html            = {https://openreview.net/forum?id=TPrWbukiLe},
+  pdf             = {RAIN_BMVC2026_TrustVis.pdf},
+  code            = {https://github.com/TheLovesOfLadyPurple/RAIN-lightweight-NN-for-one-step-semantic-watermark-extraction},
+  preview         = {rain_pipeline.jpg},
+  award           = {Accepted for **Oral Presentation** at the BMVC 2026 Workshop on Trustworthy Visual Computing (TrustVis). PC Comment: *"The clear central insight and substantial computational savings, with comparable robustness, make this a valuable contribution to efficient watermark extraction."*},
+  award_name      = {Oral Presentation},
+  selected        = {true}
 }
 
-@book{einstein1956investigations,
-  bibtex_show = {true},
-  title       = {Investigations on the Theory of the Brownian Movement},
-  author      = {Einstein, Albert},
-  year        = {1956},
-  publisher   = {Courier Corporation},
-  preview     = {brownian-motion.gif}
+@article{li2026empurple,
+  abbr            = {Preprint},
+  bibtex_show     = {true},
+  title           = {EMPURPLE: A Free Lunch for Diffusion Distillation based on the Information Bottleneck},
+  author          = {Li, Zilai and Bai, Lujia},
+  journal         = {arXiv preprint arXiv:2607.04276 (Working Paper)},
+  year            = {2026},
+  month           = {July},
+  abstract        = {Diffusion models achieve impressive image-generation quality but remain expensive at inference time. Diffusion distillation reduces sampling steps, yet many distilled models, including SDXL-Lightning and distribution matching distillation methods, suffer from degraded Fréchet Inception Distance (FID). We analyze this phenomenon through a PAC-style generalization bound. Our analysis suggests that aggressive early-step redirection of the velocity field makes the distillation target harder to learn, enlarging the train-test gap. As a result, early-step output distributions differ between training and inference, causing distribution mismatch in the intermediate noisy latent used as next-step inputs. We empirically validate this mechanism by showing reduced diversity in both intermediate features and final outputs. To address this issue, we propose EMPURPLE, a simple training-free method that recycles intermediate latents sampled from the original model. EMPURPLE is model-agnostic and improves FID by 7% to 20% across DMD2, Hyper-SD, FlashSD, and SDXL-Lightning.},
+  arxiv           = {2607.04276},
+  code            = {https://github.com/TheLovesOfLadyPurple/Empurple-Training-Free-Algorithm-To-enhance-Diversity-of-The-Diffusion-Distillation-Model},
+  website         = {https://huggingface.co/spaces/coralLight/EMPURPLE},
+  html            = {https://colab.research.google.com/drive/1DVw41J_7yzhBxRhhNeOsCFxz-ROZWHLw?usp=sharing},
+  preview         = {empurple_comparison.jpg},
+  selected        = {true}
 }
 
-@article{einstein1950meaning,
-  abbr        = {AJP},
-  bibtex_show = {true},
-  title       = {The meaning of relativity},
-  author      = {Einstein, Albert and Taub, AH},
-  journal     = {American Journal of Physics},
-  volume      = {18},
-  number      = {6},
-  pages       = {403--404},
-  year        = {1950},
-  publisher   = {American Association of Physics Teachers}
-}
-
-@article{PhysRev.47.777,
-  abbr              = {PhysRev},
-  title             = {Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author            = {Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract          = {In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal           = {Phys. Rev.},
-  location          = {New Jersey},
-  volume            = {47},
-  issue             = {10},
-  pages             = {777--780},
-  numpages          = {0},
-  year              = {1935},
-  month             = {May},
-  publisher         = aps,
-  doi               = {10.1103/PhysRev.47.777},
-  url               = {https://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html              = {https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf               = {example_pdf.pdf},
-  altmetric         = {248277},
-  dimensions        = {true},
-  google_scholar_id = {qyhmnyLat1gC},
-  video             = {https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info   = {. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation        = {* Example use of superscripts<br>† Albert Einstein},
-  selected          = {true},
-  inspirehep_id     = {3255}
-}
-
-@article{einstein1905molekularkinetischen,
-  title     = {{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author    = {Einstein, A.},
-  journal   = {Annalen der physik},
-  volume    = {322},
-  number    = {8},
-  pages     = {549--560},
-  year      = {1905},
-  publisher = {Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr    = {Ann. Phys.},
-  title   = {Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author  = {Einstein, A.},
-  journal = {Ann. Phys.},
-  volume  = {17},
-  pages   = {549--560},
-  year    = {1905}
-}
-
-@article{einstein1905electrodynamics,
-  title  = {On the electrodynamics of moving bodies},
-  author = {Einstein, A.},
-  year   = {1905}
-}
-
-@article{einstein1905photoelectriceffect,
-  bibtex_show = {true},
-  abbr        = {Ann. Phys.},
-  title       = {{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}},
-  author      = {Albert Einstein},
-  abstract    = {This is the abstract text.},
-  journal     = {Ann. Phys.},
-  volume      = {322},
-  number      = {6},
-  pages       = {132--148},
-  year        = {1905},
-  doi         = {10.1002/andp.19053220607},
-  award       = {Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name  = {Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show = {true},
-  title       = {Letters on wave mechanics},
-  author      = {Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year        = {1967},
-  publisher   = {Vision},
-  preview     = {wave-mechanics.gif},
-  abbr        = {Vision}
+@article{li2025fscheduler,
+  abbr            = {TMLR (Sub.)},
+  bibtex_show     = {true},
+  title           = {F-scheduler: Illuminating the Free-Lunch Design Space for Fast Sampling of Diffusion Models},
+  author          = {Li, Zilai and Bai, Lujia},
+  journal         = {Under Review at Transactions on Machine Learning Research (TMLR)},
+  year            = {2025},
+  month           = {October},
+  abstract        = {Diffusion models are the state-of-the-art generative models for high-resolution images, but sampling from pretrained models is computationally expensive, motivating interest in fast sampling. Although Free-U Net is a training-free enhancement for improving image quality, we find it ineffective under few-step (<10) sampling. We analyze the discrete diffusion ODE and propose F-scheduler, a scheduler designed for ODE solvers with Free-U Net. Our proposed scheduler consists of a special time schedule that does not fully denoise the feature to enable the use of the KL-term in the beta-VAE decoder, and the schedule of a proper inference stage for modifying the U-Net skip-connection via Free-U Net. Via information theory, we provide insights into how the better scheduled ODE solvers for the diffusion model can outperform the training-based diffusion distillation model. The newly proposed scheduler is compatible with most of the few-step ODE solvers and can sample a 1024x1024-resolution image in 6 steps and a 512x512-resolution image in 5 steps when it applies to DPM++ 2M and UniPC, with an FID result that outperforms the SOTA distillation models and the 20-step DPM++ 2M solver, respectively.},
+  arxiv           = {2510.02390},
+  code            = {https://github.com/TheLovesOfLadyPurple/F-scheduler},
+  website         = {https://huggingface.co/spaces/coralLight/DMD2vsF-Scheduler},
+  html            = {https://huggingface.co/coralLight},
+  preview         = {fscheduler_vs_dmd2.jpg},
+  selected        = {true}
 }

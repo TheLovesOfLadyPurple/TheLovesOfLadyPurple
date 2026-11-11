@@ -1,81 +1,30 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: "RAIN: One-Step Watermark Extraction"
+description: "BMVC 2026 TrustVis Workshop (Oral) — 47.4× lower FLOPs & 1.39 ms/image semantic watermark extraction"
+img: assets/img/rain_pipeline.jpg
 importance: 1
 category: work
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+**RAIN** (_Region-Aware Inversion Network for Semantic Watermark Extraction_) {% cite li2026rain %} is a prompt-free, U-Net-free, one-step extractor for Gaussian-Shading semantic watermarks in Stable Diffusion images, accepted for **Oral Presentation** at the **BMVC 2026 Workshop on Trustworthy Visual Computing (TrustVis)**.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+- **GitHub Repository:** [TheLovesOfLadyPurple/RAIN-lightweight-NN-for-one-step-semantic-watermark-extraction](https://github.com/TheLovesOfLadyPurple/RAIN-lightweight-NN-for-one-step-semantic-watermark-extraction)
+- **Paper:** [arXiv:2609.14856](https://arxiv.org/abs/2609.14856) · [OpenReview Forum](https://openreview.net/forum?id=TPrWbukiLe)
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row mt-3">
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/rain_pipeline.jpg" title="RAIN Architecture and Extraction Pipeline" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
 </div>
-```
+<div class="caption">
+  Figure 1: RAIN extraction pipeline. Instead of running iterative multi-step diffusion U-Net inversion, RAIN decomposes high-SNR endpoint statistic recovery into two parallel width-64 NAFNet branches ($F_0$ anchor branch and $F_1, F_2$ residual/timestep branch) executing concurrently across separate CUDA streams.
+</div>
 
-{% endraw %}
+### Key Contributions
+
+- **47.4× Lower Compute & 56× Fewer Parameters:** Requires only **14.394 GFLOPs** and **15.468M** parameters, compared with ~680 GFLOPs and ~866–868M parameters for diffusion U-Net one-step extractors (**FARI** and **OSI**).
+- **1.39 ms/image Parallel Inference:** Executes two independent width-64 NAFNet branches concurrently across separate CUDA streams / GPUs, achieving **22.5×–26.8× lower latency** than OSI (`31.32 ms`) and FARI (`37.34 ms`).
+- **SOTA Distortion Robustness & Strict FPR Control:** Matches 50-step DDIM Inversion on clean SD v2.1 images (**99.99%** bit accuracy) while remaining robust across 10 severe distortions (JPEG, crop, drop, resize, Gaussian/median blur, noise, brightness) with verified false-positive control across $10^6$ non-watermarked comparisons.
+- **Theoretical Analysis of Distilled Models & DDIM Inversion:** Provides a closed-form proof using multivariable Taylor expansion and the Test Function Method explaining why endpoint-jumping distilled models (LCM, DMD2) trained on independently noised marginals cannot directly use deterministic DDIM Inversion.

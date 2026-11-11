@@ -1,33 +1,19 @@
 ---
 layout: post
-title: A long announcement with details
-date: 2015-11-07 16:11:00-0400
+title: "EMPURPLE: Training-Free Diversity Enhancement for Diffusion Distillation & Live Hugging Face Demo"
+date: 2026-09-29 14:16:00+0800
 inline: false
 related_posts: false
 ---
 
-Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.
+We released **[EMPURPLE](https://github.com/TheLovesOfLadyPurple/Empurple-Training-Free-Algorithm-To-enhance-Diversity-of-The-Diffusion-Distillation-Model)** ([arXiv:2607.04276](https://arxiv.org/abs/2607.04276)) alongside an interactive Gradio demo on [Hugging Face Spaces (`coralLight/EMPURPLE`)](https://huggingface.co/spaces/coralLight/EMPURPLE) and [Google Colab](https://colab.research.google.com/drive/1DVw41J_7yzhBxRhhNeOsCFxz-ROZWHLw?usp=sharing).
 
 ---
 
-Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.
+#### Key Findings
 
-#### Hipster list
+- **PAC-Style Generalization & Information Bottleneck Analysis:** Aggressive early-step velocity redirection in few-step diffusion distillation enlarges the train–test gap, shifting intermediate noisy latent distributions and causing severe mode collapse.
+- **Training-Free Latent Recycling:** By caching noisy latents at an intermediate timestep (e.g., $t=852$ from an 8-step SDXL UniPC pass) and reusing them across distilled generation, EMPURPLE restores structural and stylistic diversity without additional training.
+- **7%–20% FID Improvement:** Improves FID across DMD2 (**+20% FID**), Hyper-SD, FlashSD, and SDXL-Lightning.
 
-<ul>
-    <li>brunch</li>
-    <li>fixie</li>
-    <li>raybans</li>
-    <li>messenger bag</li>
-</ul>
-
-Hoodie Thundercats retro, tote bag 8-bit Godard craft beer gastropub. Truffaut Tumblr taxidermy, raw denim Kickstarter sartorial dreamcatcher. Quinoa chambray slow-carb salvia readymade, bicycle rights 90's yr typewriter selfies letterpress cardigan vegan.
-
----
-
-Pug heirloom High Life vinyl swag, single-origin coffee four dollar toast taxidermy reprehenderit fap distillery master cleanse locavore. Est anim sapiente leggings Brooklyn ea. Thundercats locavore excepteur veniam eiusmod. Raw denim Truffaut Schlitz, migas sapiente Portland VHS twee Bushwick Marfa typewriter retro id keytar.
-
-> We do not grow absolutely, chronologically. We grow sometimes in one dimension, and not in another, unevenly. We grow partially. We are relative. We are mature in one realm, childish in another.
-> —Anais Nin
-
-Fap aliqua qui, scenester pug Echo Park polaroid irony shabby chic ex cardigan church-key Odd Future accusamus. Blog stumptown sartorial squid, gastropub duis aesthetic Truffaut vero. Pinterest tilde twee, odio mumblecore jean shorts lumbersexual.
+{% include figure.liquid loading="eager" path="assets/img/empurple_demo.jpg" title="EMPURPLE Hugging Face Space Demo" class="img-fluid rounded z-depth-1" zoomable=true %}

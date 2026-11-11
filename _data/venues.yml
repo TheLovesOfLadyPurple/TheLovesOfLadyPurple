@@ -1,9 +1,11 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
+"BMVC-W":
+  url: https://openreview.net/forum?id=TPrWbukiLe
   color: "#00369f"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"TMLR (Sub.)":
+  url: https://jmlr.org/tmlr/
+  color: "#664f8c"
 
-"Vision":
+"Preprint":
+  url: https://arxiv.org/abs/2607.04276
   color: "#009f36"

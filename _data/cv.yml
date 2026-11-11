@@ -1,189 +1,186 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: Zilai Li
+  label: Independent Researcher & Software Engineer
+  email: lizilai2008@gmail.com
+  location: China
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  website: https://github.com/TheLovesOfLadyPurple
+  summary: >
+    Independent researcher and software engineer focusing on efficient generative modeling, fast ODE/SDE solvers for diffusion models, training-free diffusion distillation enhancement, and lightweight semantic watermark extraction. Contributor to Hugging Face Diffusers with interactive model demos hosted on Hugging Face Spaces (coralLight).
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
     - network: GitHub
-      username: example
-    - network: LinkedIn
-      username: example
+      username: TheLovesOfLadyPurple
+    - network: Hugging Face
+      username: coralLight
+    - network: OpenReview
+      username: ~Zilai_Li1
 
   address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+    city: Beijing
+    region: Beijing
+    countryCode: CN
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
+      - institution: University of Nottingham
+        location: Nottingham, England, GB
+        url: https://www.nottingham.ac.uk/
+        area: Computer Science
+        studyType: M.Sc. in Computer Science (With Merit)
+        start_date: 2021
+        end_date: 2022
         highlights:
-          - Description 1.
-          - Description 2.
+          - Postgraduate coursework and research in computer vision, machine learning, and software engineering at Jubilee Campus.
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
+      - institution: China University of Geosciences, Beijing (CUGB)
+        location: Beijing, Beijing, CN
+        url: https://en.cugb.edu.cn/
+        area: Computer Science and Technology
+        studyType: B.Eng. in Computer Science and Technology
+        start_date: 2016
+        end_date: 2020
         highlights:
-          - Description 1.
-          - Description 2.
+          - Undergraduate training in computer science fundamentals, algorithms, and software systems at the School of Information Engineering.
 
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: Independent Research
+        position: Independent Researcher
+        location: China
+        url: https://github.com/TheLovesOfLadyPurple
+        start_date: 2022
+        end_date: Present
+        summary: Conducting independent research on diffusion models, fast numerical ODE solvers, diffusion distillation diversity, and generative AI trustworthiness.
         highlights:
-          - Relativity
-          - Description 2.
+          - "**RAIN (BMVC 2026 TrustVis Workshop, Oral):** Proposed a prompt-free, U-Net-free, dual-branch NAFNet architecture for one-step Gaussian-Shading semantic watermark extraction, achieving **47.4× fewer FLOPs** (`14.394 GFLOPs`), **56× fewer parameters** (`15.468M`), and **1.39 ms/image** parallel inference (**22.5×–26.8× speedup** over OSI and FARI) with **99.99%** clean bit accuracy."
+          - "**F-scheduler (Under Review at TMLR):** Designed a training-free time and Free-U skip-connection schedule for few-step diffusion ODE solvers (UniPC, DPM++ 2M), generating `1024×1024` SDXL images in **6 steps** and `512×512` SD 1.5 images in **5 steps** while outperforming SOTA distillation models (e.g., DMD2 LoRA) and 20-step DPM++ 2M in FID."
+          - "**EMPURPLE (Preprint):** Analyzed mode collapse and train–test distribution shift in distilled diffusion models via a PAC-style generalization bound and the Information Bottleneck principle; proposed a training-free intermediate-latent recycling algorithm that improves FID by **7%–20%** across DMD2 (**+20% FID**), Hyper-SD, FlashSD, and SDXL-Lightning."
+          - "**Open-Source & Community Demos:** Contributed a merged scheduler bug fix to **Hugging Face Diffusers** ([PR #14011](https://github.com/huggingface/diffusers/pull/14011)) and deployed interactive Gradio demos on [Hugging Face Spaces (`coralLight`)](https://huggingface.co/coralLight)."
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+      - company: Industry Software Engineering
+        position: Software Engineer
+        location: China
+        start_date: 2023
+        end_date: Present
+        summary: Full-time software development engineer building production client architectures, interactive UI/animation pipelines, and high-performance application systems alongside independent AI research.
         highlights:
-          - Description 1.
-          - Description 2.
-
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
-        highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
-
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
-
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+          - Architected modular application components, asynchronous state management (MVVM), and high-frame-rate rendering workflows.
+          - Built reproducible evaluation pipelines, multi-GPU CUDA stream inference benchmarks, and interactive Gradio web applications for generative vision models.
 
     Publications:
-      - title: Zur Elektrodynamik bewegter Körper
+      - title: "RAIN: Region-Aware Inversion Network for Semantic Watermark Extraction"
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
+          - Zilai Li
+        publisher: "BMVC 2026 Workshop on Trustworthy Visual Computing (TrustVis) — Accepted for Oral Presentation (arXiv:2609.14856)"
+        releaseDate: 2026-09-14
+        url: https://github.com/TheLovesOfLadyPurple/RAIN-lightweight-NN-for-one-step-semantic-watermark-extraction
+        summary: >
+          A lightweight, prompt-free, one-step semantic watermark extractor that decomposes high-SNR endpoint recovery into parallel anchor and residual NAFNet branches. Reduces compute by 47.4× (14.394 GFLOPs vs. ~680 GFLOPs) and latency to 1.39 ms/image while matching 50-step DDIM Inversion accuracy (99.99%) and maintaining robustness across 10 image distortions.
 
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
+      - title: "F-scheduler: Illuminating the Free-Lunch Design Space for Fast Sampling of Diffusion Models"
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
+          - Zilai Li
+          - Lujia Bai
+        publisher: "Under Review at Transactions on Machine Learning Research (TMLR) (arXiv:2510.02390)"
+        releaseDate: 2025-09-30
+        url: https://github.com/TheLovesOfLadyPurple/F-scheduler
+        summary: >
+          Proposes a training-free ODE solver time schedule that preserves terminal KL-regularized latent variance for the β-VAE decoder and coordinates stage-wise Free-U Net skip-connection modulation. Achieves 6-step 1024×1024 and 5-step 512×512 generation with UniPC and DPM++ 2M, outperforming SOTA diffusion distillation models and 20-step solvers in FID.
 
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
+      - title: "EMPURPLE: A Free Lunch for Diffusion Distillation based on the Information Bottleneck"
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
+          - Zilai Li
+          - Lujia Bai
+        publisher: "Working Paper / Preprint (arXiv:2607.04276)"
+        releaseDate: 2026-07-05
+        url: https://github.com/TheLovesOfLadyPurple/Empurple-Training-Free-Algorithm-To-enhance-Diversity-of-The-Diffusion-Distillation-Model
+        summary: >
+          Establishes a PAC-style theoretical link between aggressive early-step velocity redirection and intermediate latent distribution shift in diffusion distillation. Introduces a model-agnostic, training-free latent recycling method that restores generation diversity and improves FID by 7%–20% across DMD2, Hyper-SD, FlashSD, and SDXL-Lightning.
+
+    Projects:
+      - name: "RAIN: One-Step Semantic Watermark Extraction"
+        start_date: 2026
+        end_date: 2026
+        url: https://github.com/TheLovesOfLadyPurple/RAIN-lightweight-NN-for-one-step-semantic-watermark-extraction
+        summary: Official PyTorch implementation and theoretical notes for RAIN (Accepted Oral at BMVC 2026 TrustVis Workshop).
+        highlights:
+          - Concurrent dual-stream NAFNet inference (`14.394 GFLOPs`, `15.468M` params, `1.39 ms/image` on dual NVIDIA A800 GPUs).
+          - Includes closed-form Test-Function & Taylor expansion proof explaining why endpoint-jumping distilled models (LCM/DMD2) cannot use deterministic DDIM Inversion.
+
+      - name: "F-scheduler: Fast Training-Free ODE Sampling for Diffusion Models"
+        start_date: 2025
+        end_date: 2026
+        url: https://github.com/TheLovesOfLadyPurple/F-scheduler
+        summary: Training-free scheduler for 5–6 step high-resolution diffusion sampling (Under Review at TMLR), with interactive Hugging Face Spaces.
+        highlights:
+          - "Live interactive demos on Hugging Face Spaces: [DMD2 vs. F-Scheduler](https://huggingface.co/spaces/coralLight/DMD2vsF-Scheduler), [F-scheduler 4K](https://huggingface.co/spaces/coralLight/F-scheduler-4k), [F-scheduler DreamshaperXL](https://huggingface.co/spaces/coralLight/F-scheduler-DreamshaperXL), and [F-scheduler Animation](https://huggingface.co/spaces/coralLight/F-scheduler-Animation)."
+          - Outperforms DMD2 LoRA in structural detail and texture fidelity using Analytical First Step (AFS) + custom timestep scheduling.
+
+      - name: "EMPURPLE: Training-Free Diversity Enhancement for Distilled Diffusion Models"
+        start_date: 2026
+        end_date: 2026
+        url: https://github.com/TheLovesOfLadyPurple/Empurple-Training-Free-Algorithm-To-enhance-Diversity-of-The-Diffusion-Distillation-Model
+        summary: Training-free intermediate-latent recycling to eliminate mode collapse in few-step distilled diffusion samplers.
+        highlights:
+          - "Live interactive comparison on Hugging Face Spaces: [coralLight/EMPURPLE](https://huggingface.co/spaces/coralLight/EMPURPLE) and [Google Colab Demo](https://colab.research.google.com/drive/1DVw41J_7yzhBxRhhNeOsCFxz-ROZWHLw?usp=sharing)."
+          - Reuses cached noisy latents (e.g., SDXL UniPC at timestep 852) to boost FID by up to 20% on DMD2 without retraining.
+
+      - name: "Hugging Face Diffusers Open-Source Contribution"
+        start_date: 2026
+        end_date: 2026
+        url: https://github.com/huggingface/diffusers/pull/14011
+        summary: Merged scheduler bug fix for the Hugging Face Diffusers library.
+        highlights:
+          - "**Merged PR [#14011](https://github.com/huggingface/diffusers/pull/14011):** Fixed custom timestep shifting inconsistency in `FlowMatchEulerDiscreteScheduler.set_timesteps` when `shift != 1`, ensuring consistency between custom `timesteps` and `num_inference_steps` schedules for Rectified Flow / Flow Matching solvers."
+
+    Awards:
+      - title: "BMVC 2026 TrustVis Workshop — Oral Presentation Acceptance"
+        date: 2026-10-09
+        awarder: 37th British Machine Vision Conference (BMVC 2026) TrustVis Workshop
+        url: https://openreview.net/forum?id=TPrWbukiLe
+        summary: "Selected for oral presentation for 'RAIN: Region-Aware Inversion Network for Semantic Watermark Extraction', recognized for its clear central insight and 47.4× computational savings."
 
     Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - name: Generative AI & Computer Vision
+        level: Advanced
+        icon: fa-solid fa-wand-magic-sparkles
+        keywords:
+          - Diffusion Models (SD 1.5, SD v2.1, SDXL, DiT)
+          - Fast ODE/SDE Solvers (UniPC, DPM++ 2M, DDIM, Flow Matching)
+          - Diffusion Distillation (DMD2, LCM, Hyper-SD, SDXL-Lightning)
+          - Semantic Watermarking (Gaussian Shading, Inversion Networks)
+
+      - name: Deep Learning & Systems
+        level: Advanced
+        icon: fa-solid fa-microchip
+        keywords:
+          - PyTorch
+          - Hugging Face Diffusers
+          - xFormers & Multi-Stream CUDA Parallelism
+          - BasicSR & NAFNet
+          - Gradio & Hugging Face Spaces
+
+      - name: Software Engineering
+        level: Advanced
+        icon: fa-solid fa-code
+        keywords:
+          - Python
+          - Swift & iOS Development
+          - C/C++
+          - Git & CI/CD
+          - Linux & Docker
 
     Languages:
-      - name: German
+      - name: Chinese (Mandarin)
         summary: "Native speaker"
 
       - name: English
-        summary: "Fluent"
+        summary: "Fluent (Academic & Professional)"
 
     Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
-
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
-
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - name: Research Interests
+        icon: fa-solid fa-lightbulb
+        keywords:
+          - Fast Sampling & Numerical ODE Solvers for Diffusion Models
+          - Training-Free Enhancement & Generalization Theory of Diffusion Distillation
+          - Trustworthy Generative AI & Efficient Semantic Watermarking
