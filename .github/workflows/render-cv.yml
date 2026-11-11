@@ -6,6 +6,7 @@ on:
       - master
     paths:
       - "_data/cv.yml"
+      - "assets/rendercv/Zilai_Li_CV.typ"
       - "assets/rendercv/design.yaml"
       - "assets/rendercv/locale.yaml"
       - "assets/rendercv/settings.yaml"

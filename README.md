@@ -7,7 +7,6 @@ _Diffusion & Flow-Matching Generative Models · Fast Numerical ODE/SDE Samplers 
 
 [![Email](https://img.shields.io/badge/Email-lizilai2008%40163.com-EA4335?style=flat-square&logo=minutemailer&logoColor=white)](mailto:lizilai2008@163.com)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-coralLight-FFD21E?style=flat-square)](https://huggingface.co/coralLight)
-[![OpenReview](https://img.shields.io/badge/OpenReview-~Zilai__Li1-8C1B13?style=flat-square)](https://openreview.net/profile?id=~Zilai_Li1)
 [![CV PDF](https://img.shields.io/badge/Curriculum%20Vitae-PDF-0A66C2?style=flat-square&logo=adobeacrobatreader&logoColor=white)](assets/pdf/Zilai_Li_CV.pdf)
 
 </div>

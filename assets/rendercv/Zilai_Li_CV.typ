@@ -13,8 +13,7 @@
   #text(size: 9.2pt)[
     Email: #link("mailto:lizilai2008@163.com")[lizilai2008\@163.com] #h(6pt) | #h(6pt)
     GitHub: #link("https://github.com/TheLovesOfLadyPurple")[github.com/TheLovesOfLadyPurple] #h(6pt) | #h(6pt)
-    Hugging Face: #link("https://huggingface.co/coralLight")[huggingface.co/coralLight] #h(6pt) | #h(6pt)
-    OpenReview: #link("https://openreview.net/profile?id=~Zilai_Li1")[~Zilai_Li1]
+    Hugging Face: #link("https://huggingface.co/coralLight")[huggingface.co/coralLight]
   ]
 ]
 
@@ -71,7 +70,7 @@ Independent researcher and software engineer focusing on efficient generative mo
   row-gutter: 3pt,
   [*Software Engineer* — _Full-Time Industry Software Development_], [*2023 – Present*],
 )
-- Designed and maintained production client architectures, MVVM reactive state pipelines, high-frame-rate UI/animation systems, and multi-GPU deep learning evaluation benchmarks.
+- Designed and maintained production iOS/client application architectures, modular MVVM reactive state pipelines, and high-frame-rate UI/animation systems.
 
 #section_header("Technical Skills")
 - *Generative AI & Vision:* Diffusion Models (SD 1.5, SD v2.1, SDXL, DiT), Fast ODE/SDE Solvers (UniPC, DPM++ 2M, DDIM, Flow Matching), Diffusion Distillation (DMD2, LCM, Hyper-SD, SDXL-Lightning), Semantic Watermarking (Gaussian Shading)

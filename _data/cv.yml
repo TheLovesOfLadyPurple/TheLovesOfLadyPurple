@@ -2,7 +2,7 @@ cv:
   name: Zilai Li
   label: Independent Researcher & Software Engineer
   email: lizilai2008@163.com
-  location: China
+  location: Guangzhou, China
   image: ""
   website: https://github.com/TheLovesOfLadyPurple
   summary: >
@@ -13,12 +13,10 @@ cv:
       username: TheLovesOfLadyPurple
     - network: Hugging Face
       username: coralLight
-    - network: OpenReview
-      username: ~Zilai_Li1
 
   address:
-    city: Beijing
-    region: Beijing
+    city: Guangzhou
+    region: Guangdong
     countryCode: CN
 
   sections:
@@ -59,13 +57,12 @@ cv:
 
       - company: Industry Software Engineering
         position: Software Engineer
-        location: China
+        location: Guangzhou, China
         start_date: 2023
         end_date: Present
-        summary: Full-time software development engineer building production client architectures, interactive UI/animation pipelines, and high-performance application systems alongside independent AI research.
+        summary: Full-time software development engineer building production iOS/client architectures, interactive UI/animation pipelines, and high-performance application systems.
         highlights:
-          - Architected modular application components, asynchronous state management (MVVM), and high-frame-rate rendering workflows.
-          - Built reproducible evaluation pipelines, multi-GPU CUDA stream inference benchmarks, and interactive Gradio web applications for generative vision models.
+          - Architected modular client application components, asynchronous state management (MVVM), and high-frame-rate UI/animation rendering workflows.
 
     Publications:
       - title: "RAIN: Region-Aware Inversion Network for Semantic Watermark Extraction"
@@ -85,7 +82,7 @@ cv:
         releaseDate: 2025-09-30
         url: https://github.com/TheLovesOfLadyPurple/F-scheduler
         summary: >
-          Proposes a training-free ODE solver time schedule that preserves terminal KL-regularized latent variance for the β-VAE decoder and coordinates stage-wise Free-U Net skip-connection modulation. Achieves 6-step 1024×1024 and 5-step 512×512 generation with UniPC and DPM++ 2M, outperforming SOTA diffusion distillation models and 20-step solvers in FID.
+          Proposes a training-free ODE solver time schedule for few-step (5–8 steps) sampling that preserves terminal KL-regularized latent variance for the β-VAE decoder and coordinates stage-wise Free-U Net skip-connection modulation. Achieves 6-step 1024×1024 (SDXL) and 5-step 512×512 (SD 1.5) generation with UniPC and DPM++ 2M, outperforming 4-step SOTA diffusion distillation models (e.g., DMD2 LoRA) and 20-step solvers in FID.
 
       - title: "EMPURPLE: A Free Lunch for Diffusion Distillation based on the Information Bottleneck"
         authors:
@@ -95,7 +92,7 @@ cv:
         releaseDate: 2026-07-05
         url: https://github.com/TheLovesOfLadyPurple/Empurple-Training-Free-Algorithm-To-enhance-Diversity-of-The-Diffusion-Distillation-Model
         summary: >
-          Establishes a PAC-style theoretical link between aggressive early-step velocity redirection and intermediate latent distribution shift in diffusion distillation. Introduces a model-agnostic, training-free latent recycling method that restores generation diversity and improves FID by 7%–20% across DMD2, Hyper-SD, FlashSD, and SDXL-Lightning.
+          Uses PCA on the covariance matrix of early-step outputs to quantify output complexity (entropy), showing that teacher models produce simpler early outputs (smaller hypothesis space under a PAC-style bound and the Information Bottleneck principle) than distilled models. Introduces a model-agnostic, training-free latent recycling method that restores generation diversity and improves FID by 7%–20% across DMD2 (+20% FID), Hyper-SD, FlashSD, and SDXL-Lightning.
 
     Projects:
       - name: "RAIN: One-Step Semantic Watermark Extraction"
@@ -111,10 +108,10 @@ cv:
         start_date: 2025
         end_date: 2026
         url: https://github.com/TheLovesOfLadyPurple/F-scheduler
-        summary: Training-free scheduler for 5–6 step high-resolution diffusion sampling (Under Review at TMLR), with interactive Hugging Face Spaces.
+        summary: Training-free scheduler for 5–8 step high-resolution diffusion sampling (Under Review at TMLR), with interactive Hugging Face Spaces.
         highlights:
           - "Live interactive demos on Hugging Face Spaces: [DMD2 vs. F-Scheduler](https://huggingface.co/spaces/coralLight/DMD2vsF-Scheduler), [F-scheduler 4K](https://huggingface.co/spaces/coralLight/F-scheduler-4k), [F-scheduler DreamshaperXL](https://huggingface.co/spaces/coralLight/F-scheduler-DreamshaperXL), and [F-scheduler Animation](https://huggingface.co/spaces/coralLight/F-scheduler-Animation)."
-          - Outperforms DMD2 LoRA in structural detail and texture fidelity using Analytical First Step (AFS) + custom timestep scheduling.
+          - Outperforms 4-step DMD2 LoRA in structural detail and texture fidelity using Analytical First Step (AFS) + 5–8 step custom timestep scheduling.
 
       - name: "EMPURPLE: Training-Free Diversity Enhancement for Distilled Diffusion Models"
         start_date: 2026
@@ -123,7 +120,7 @@ cv:
         summary: Training-free intermediate-latent recycling to eliminate mode collapse in few-step distilled diffusion samplers.
         highlights:
           - "Live interactive comparison on Hugging Face Spaces: [coralLight/EMPURPLE](https://huggingface.co/spaces/coralLight/EMPURPLE) and [Google Colab Demo](https://colab.research.google.com/drive/1DVw41J_7yzhBxRhhNeOsCFxz-ROZWHLw?usp=sharing)."
-          - Reuses cached noisy latents (e.g., SDXL UniPC at timestep 852) to boost FID by up to 20% on DMD2 without retraining.
+          - Uses covariance PCA to show teacher early outputs have lower complexity (entropy) and a smaller hypothesis space, and reuses cached teacher noisy latents (e.g., SDXL UniPC at timestep 852) to boost FID by up to 20% on DMD2 without retraining.
 
       - name: "Hugging Face Diffusers Open-Source Contribution"
         start_date: 2026
@@ -138,7 +135,7 @@ cv:
         date: 2026-10-09
         awarder: 37th British Machine Vision Conference (BMVC 2026) TrustVis Workshop
         url: https://github.com/TheLovesOfLadyPurple/RAIN-lightweight-NN-for-one-step-semantic-watermark-extraction
-        summary: "Selected for oral presentation for 'RAIN: Region-Aware Inversion Network for Semantic Watermark Extraction', recognized for its clear central insight and 47.4× computational savings."
+        summary: "Selected for oral presentation for 'RAIN: Region-Aware Inversion Network for Semantic Watermark Extraction' (47.4× lower FLOPs and 1.39 ms/image one-step semantic watermark extraction)."
 
     Skills:
       - name: Generative AI & Computer Vision

@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Independent Researcher & Software Engineer · <a href="https://github.com/TheLovesOfLadyPurple">GitHub</a> · <a href="https://huggingface.co/coralLight">Hugging Face (coralLight)</a> · <a href="https://openreview.net/profile?id=~Zilai_Li1">OpenReview</a>
+subtitle: Independent Researcher & Software Engineer · <a href="https://github.com/TheLovesOfLadyPurple">GitHub</a> · <a href="https://huggingface.co/coralLight">Hugging Face (coralLight)</a>
 
 profile:
   align: right
