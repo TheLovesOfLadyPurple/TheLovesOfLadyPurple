@@ -11,7 +11,7 @@
   #text(size: 11pt, style: "italic")[Independent Researcher & Software Engineer] \
   #v(4pt)
   #text(size: 9.2pt)[
-    Email: #link("mailto:lizilai2008@gmail.com")[lizilai2008\@gmail.com] #h(6pt) | #h(6pt)
+    Email: #link("mailto:lizilai2008@163.com")[lizilai2008\@163.com] #h(6pt) | #h(6pt)
     GitHub: #link("https://github.com/TheLovesOfLadyPurple")[github.com/TheLovesOfLadyPurple] #h(6pt) | #h(6pt)
     Hugging Face: #link("https://huggingface.co/coralLight")[huggingface.co/coralLight] #h(6pt) | #h(6pt)
     OpenReview: #link("https://openreview.net/profile?id=~Zilai_Li1")[~Zilai_Li1]
