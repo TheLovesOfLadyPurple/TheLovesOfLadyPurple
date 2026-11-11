@@ -15,7 +15,7 @@ _Diffusion & Flow-Matching Generative Models · Fast Numerical ODE/SDE Samplers 
 
 ## 👋 About Me
 
-I am an Independent Researcher and Software Engineer working on **efficient generative modeling** and **trustworthy generative AI**. My research focuses on discrete diffusion ODE analysis, training-free fast ODE schedules (`F-scheduler`), PAC/Information-Bottleneck analysis and diversity restoration for few-step diffusion distillation (`EMPURPLE`), and ultra-fast one-step semantic watermark extraction (`RAIN`).
+I am an Independent Researcher working on **efficient generative modeling** and **trustworthy generative AI**, and a Software Engineer. My research focuses on discrete diffusion ODE analysis, training-free fast ODE schedules (`F-scheduler`), PAC/Information-Bottleneck analysis and diversity restoration for few-step diffusion distillation (`EMPURPLE`), and ultra-fast one-step semantic watermark extraction (`RAIN`).
 
 ### 🎓 Education
 
