@@ -12,7 +12,7 @@ We released **[EMPURPLE](https://github.com/TheLovesOfLadyPurple/Empurple-Traini
 
 #### Key Findings
 
-- **PAC-Style Generalization & Information Bottleneck Analysis:** Aggressive early-step velocity redirection in few-step diffusion distillation enlarges the train–test gap, shifting intermediate noisy latent distributions and causing severe mode collapse.
+- **Covariance PCA & PAC-Style Generalization Analysis:** By applying PCA to the covariance matrix of early-step outputs to measure complexity (entropy), we show that the teacher model's early-step outputs are simpler (having a smaller hypothesis space) than the distilled model's outputs, explaining why aggressive early-step velocity redirection enlarges the train–test gap and causes intermediate latent distribution mismatch.
 - **Training-Free Latent Recycling:** By caching noisy latents at an intermediate timestep (e.g., $t=852$ from an 8-step SDXL UniPC pass) and reusing them across distilled generation, EMPURPLE restores structural and stylistic diversity without additional training.
 - **7%–20% FID Improvement:** Improves FID across DMD2 (**+20% FID**), Hyper-SD, FlashSD, and SDXL-Lightning.
 

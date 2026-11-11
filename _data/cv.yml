@@ -53,8 +53,8 @@ cv:
         summary: Conducting independent research on diffusion models, fast numerical ODE solvers, diffusion distillation diversity, and generative AI trustworthiness.
         highlights:
           - "**RAIN (BMVC 2026 TrustVis Workshop, Oral):** Proposed a prompt-free, U-Net-free, dual-branch NAFNet architecture for one-step Gaussian-Shading semantic watermark extraction, achieving **47.4× fewer FLOPs** (`14.394 GFLOPs`), **56× fewer parameters** (`15.468M`), and **1.39 ms/image** parallel inference (**22.5×–26.8× speedup** over OSI and FARI) with **99.99%** clean bit accuracy."
-          - "**F-scheduler (Under Review at TMLR):** Designed a training-free time and Free-U skip-connection schedule for few-step diffusion ODE solvers (UniPC, DPM++ 2M), generating `1024×1024` SDXL images in **6 steps** and `512×512` SD 1.5 images in **5 steps** while outperforming SOTA distillation models (e.g., DMD2 LoRA) and 20-step DPM++ 2M in FID."
-          - "**EMPURPLE (Preprint):** Analyzed mode collapse and train–test distribution shift in distilled diffusion models via a PAC-style generalization bound and the Information Bottleneck principle; proposed a training-free intermediate-latent recycling algorithm that improves FID by **7%–20%** across DMD2 (**+20% FID**), Hyper-SD, FlashSD, and SDXL-Lightning."
+          - "**F-scheduler (Under Review at TMLR):** Designed a training-free time and Free-U skip-connection schedule for few-step (`5–8` steps) diffusion ODE solvers (UniPC, DPM++ 2M), generating `1024×1024` SDXL images in **6 steps** and `512×512` SD 1.5 images in **5 steps** while outperforming 4-step SOTA distillation models (e.g., DMD2 LoRA) and 20-step DPM++ 2M in FID."
+          - "**EMPURPLE (Preprint):** Used PCA on the covariance matrix of early-step outputs to quantify output complexity (entropy), showing that teacher models have simpler early outputs (and thus a smaller hypothesis space under a PAC-style bound and the Information Bottleneck principle) than distilled models; proposed a training-free intermediate-latent recycling algorithm that improves FID by **7%–20%** across DMD2 (**+20% FID**), Hyper-SD, FlashSD, and SDXL-Lightning."
           - "**Open-Source & Community Demos:** Contributed a merged scheduler bug fix to **Hugging Face Diffusers** ([PR #14011](https://github.com/huggingface/diffusers/pull/14011)) and deployed interactive Gradio demos on [Hugging Face Spaces (`coralLight`)](https://huggingface.co/coralLight)."
 
       - company: Industry Software Engineering
@@ -137,7 +137,7 @@ cv:
       - title: "BMVC 2026 TrustVis Workshop — Oral Presentation Acceptance"
         date: 2026-10-09
         awarder: 37th British Machine Vision Conference (BMVC 2026) TrustVis Workshop
-        url: https://openreview.net/forum?id=TPrWbukiLe
+        url: https://github.com/TheLovesOfLadyPurple/RAIN-lightweight-NN-for-one-step-semantic-watermark-extraction
         summary: "Selected for oral presentation for 'RAIN: Region-Aware Inversion Network for Semantic Watermark Extraction', recognized for its clear central insight and 47.4× computational savings."
 
     Skills:

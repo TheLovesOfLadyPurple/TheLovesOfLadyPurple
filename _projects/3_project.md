@@ -25,6 +25,6 @@ related_publications: true
 
 ### Key Contributions
 
-- **PAC Generalization & Information Bottleneck Perspective:** Demonstrates that aggressive early-step velocity field redirection in diffusion distillation enlarges the train–test gap, causing distribution shift in intermediate noisy latents.
+- **Covariance PCA & PAC-Style Hypothesis Space Analysis:** Uses PCA on the covariance matrix of early-step outputs to measure output complexity (entropy), showing that the teacher model's early-step outputs are simpler (and therefore correspond to a smaller hypothesis space) than the distilled model's aggressive early-step outputs. This explains why diffusion distillation suffers from an enlarged train–test gap and distribution mismatch in intermediate noisy latents.
 - **Model-Agnostic Latent Recycling:** Reuses cached coarse middle-step latents from the base diffusion trajectory before applying the distilled model for high-frequency detail synthesis.
 - **7%–20% FID Gain Without Training:** Improves FID by **20% on DMD2** and **7%–20%** across Hyper-SD, FlashSD, and SDXL-Lightning with zero retraining overhead.

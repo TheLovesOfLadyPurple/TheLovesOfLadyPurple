@@ -11,7 +11,7 @@ related_publications: true
 **RAIN** (_Region-Aware Inversion Network for Semantic Watermark Extraction_) {% cite li2026rain %} is a prompt-free, U-Net-free, one-step extractor for Gaussian-Shading semantic watermarks in Stable Diffusion images, accepted for **Oral Presentation** at the **BMVC 2026 Workshop on Trustworthy Visual Computing (TrustVis)**.
 
 - **GitHub Repository:** [TheLovesOfLadyPurple/RAIN-lightweight-NN-for-one-step-semantic-watermark-extraction](https://github.com/TheLovesOfLadyPurple/RAIN-lightweight-NN-for-one-step-semantic-watermark-extraction)
-- **Paper:** [arXiv:2609.14856](https://arxiv.org/abs/2609.14856) · [OpenReview Forum](https://openreview.net/forum?id=TPrWbukiLe)
+- **Paper:** [arXiv:2609.14856](https://arxiv.org/abs/2609.14856)
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">

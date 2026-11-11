@@ -1,14 +1,14 @@
 ---
 layout: page
 title: "F-scheduler: Fast Diffusion ODE Solver"
-description: "Under Review at TMLR — Training-free 5–6 step ODE sampling outperforming SOTA distillation models"
+description: "Under Review at TMLR — Training-free 5–8 step ODE sampling outperforming 4-step SOTA distillation models"
 img: assets/img/fscheduler_vs_dmd2.jpg
 importance: 2
 category: work
 related_publications: true
 ---
 
-**F-scheduler** (_Illuminating the Free-Lunch Design Space for Fast Sampling of Diffusion Models_) {% cite li2025fscheduler %} is a training-free time and Free-U skip-connection scheduler designed for few-step (`<10` steps) diffusion ODE solvers (`UniPC`, `DPM++ 2M`), currently **under review at Transactions on Machine Learning Research (TMLR)**.
+**F-scheduler** (_Illuminating the Free-Lunch Design Space for Fast Sampling of Diffusion Models_) {% cite li2025fscheduler %} is a training-free time and Free-U skip-connection scheduler designed for few-step (`5–8` steps) diffusion ODE solvers (`UniPC`, `DPM++ 2M`), currently **under review at Transactions on Machine Learning Research (TMLR)**.
 
 - **GitHub Repository:** [TheLovesOfLadyPurple/F-scheduler](https://github.com/TheLovesOfLadyPurple/F-scheduler)
 - **Paper:** [arXiv:2510.02390](https://arxiv.org/abs/2510.02390)
@@ -27,11 +27,11 @@ related_publications: true
   </div>
 </div>
 <div class="caption">
-  Visual comparison cropped from our <a href="https://huggingface.co/spaces/coralLight/DMD2vsF-Scheduler" target="_blank">coralLight/DMD2vsF-Scheduler</a> Hugging Face Space on prompt <em>"Dark Moody Atmosphere, Photorealistic..."</em>: <strong>Left</strong> is our fast training-free inference result using Analytical First Step (AFS) + F-scheduler; <strong>Right</strong> is the DMD2 LoRA baseline result.
+  Visual comparison cropped from our <a href="https://huggingface.co/spaces/coralLight/DMD2vsF-Scheduler" target="_blank">coralLight/DMD2vsF-Scheduler</a> Hugging Face Space on prompt <em>"Dark Moody Atmosphere, Photorealistic..."</em>: <strong>Left</strong> is our fast training-free inference result using Analytical First Step (AFS) + 5–8 step F-scheduler; <strong>Right</strong> is the 4-step DMD2 LoRA baseline result.
 </div>
 
 ### Key Contributions
 
 - **Terminal KL-Aware Time Schedule:** Retains a controlled terminal noise level rather than fully denoising to zero variance, enabling the $\beta$-VAE decoder to exploit its KL-regularized latent distribution during few-step generation.
 - **Stage-Scheduled Free-U Net Modulation:** Identifies why standard Free-U Net degrades few-step (`<10`) sampling and schedules skip-connection scaling at the optimal inference stage.
-- **6-Step SDXL & 5-Step SD 1.5 Sampling:** Compatible with standard ODE solvers (`UniPC`, `DPM++ 2M`), generating `1024×1024` images in **6 steps** and `512×512` images in **5 steps** with FID outperforming SOTA distillation models and 20-step DPM++ 2M.
+- **5–8 Step ODE Sampling vs. 4-Step Distillation:** Compatible with standard ODE solvers (`UniPC`, `DPM++ 2M`), generating `1024×1024` images in **6 steps** and `512×512` images in **5 steps** with FID outperforming 4-step SOTA distillation models (e.g., DMD2 LoRA) and 20-step DPM++ 2M.
