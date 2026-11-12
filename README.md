@@ -47,7 +47,7 @@ I am an Independent Researcher working on **efficient generative modeling** and 
 
 > **Zilai Li**, Lujia Bai  
 > 📝 **Under Review at Transactions on Machine Learning Research (TMLR)**  
-> [[arXiv:2510.02390](https://arxiv.org/abs/2510.02390)] · [[GitHub Repository](https://github.com/TheLovesOfLadyPurple/F-scheduler)] · [[🤗 Interactive Demo: DMD2 vs F-Scheduler](https://huggingface.co/spaces/coralLight/DMD2vsF-Scheduler)]
+ > [[arXiv:2510.02390](https://arxiv.org/abs/2510.02390)] · [[GitHub Repository](https://github.com/TheLovesOfLadyPurple/F-scheduler)] · [[🤗 Interactive Demo: DMD2 vs F-Scheduler](https://huggingface.co/spaces/coralLight/DMD2vsF-Scheduler)] [[🤗 Interactive Demo: DPM++ 2m vs F-Scheduler](https://huggingface.co/spaces/coralLight/F-scheduler-Animation)] 
 
 <p align="center">
   <img src="assets/img/fscheduler_vs_dmd2.jpg" alt="F-scheduler + AFS (5-8 steps) vs 4-step DMD2 SDXL Comparison" width="88%">
